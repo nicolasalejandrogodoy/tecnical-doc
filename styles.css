@@ -112,8 +112,25 @@ code{
 }
  @media(max-width:577px){
  
-
-
+  .container .navbar ul{
+    overflow:hidden;
+    overflow-y:scroll;
+    height: 80vh;
+  }
+  .container .navbar ul::-webkit-scrollbar{
+    width: 7px;
+    }
+    .container .navbar ul::-webkit-scrollbar-thumb{
+    background-color: #bdb8d7;
+    border-radius: 8px;
+    }
+    body::-webkit-scrollbar{
+      width: 7px;
+    }
+    body::-webkit-scrollbar-thumb{
+      background-color: gray;
+      border-radius: 8px;
+    }
 body{display:flex;
   flex-direction:column;
   width:100%;
@@ -146,6 +163,7 @@ body{display:flex;
     visibility: hidden;
     position:fixed;
     width:80%;
+    height: 100%;
   
     }
 .visible{
@@ -159,6 +177,8 @@ body{display:flex;
   font-size: 30px;
   margin: 8px;
   cursor:pointer;
+  color:rgb(46, 155, 206);
+  
 
 }
 .cerrar-menu{
@@ -181,7 +201,7 @@ header h1{
 }
 .navbar ul li{
  text-align: center;
- padding: 11px;
+ padding: 15px;
  border-bottom: 1px solid rgba(0,0,0,0.05);
  border-top: 1px solid rgba(225,225,225,0.05);
  color:honeydew;
